@@ -1,0 +1,10 @@
+## Cabeçalhos de segurança — aplicados automaticamente pela Netlify
+## (este arquivo deve ficar na raiz do site publicado)
+
+/*
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://img.icons8.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; frame-src https://www.google.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()

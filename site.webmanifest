@@ -1,0 +1,13 @@
+{
+  "name": "Clínica Ortopédica do Recife",
+  "short_name": "Ortopédica Recife",
+  "description": "Ortopedia e traumatologia em Recife-PE com mais de 20 especialistas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2C6D52",
+  "icons": [
+    { "src": "assets/images/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/images/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

@@ -1,0 +1,73 @@
+/* =====================================================
+   VARIÁVEIS DE DESIGN — Clínica Ortopédica do Recife
+   Paleta baseada na logo (verde #2C6D52)
+   ===================================================== */
+:root {
+  /* --- Cores da marca --- */
+  --green-900: #16382A;
+  --green-800: #1E4A38;
+  --green-700: #245A44;
+  --green:     #2C6D52; /* cor principal da logo */
+  --green-600: #35815F;
+  --green-500: #4A9877;
+  --green-300: #8FBCA9;
+  --green-100: #E4EEE9;
+  --green-50:  #F1F7F4;
+
+  /* --- Acento (destaque premium) --- */
+  --accent:      #C9A24B;
+  --accent-dark: #A9852F;
+
+  /* --- WhatsApp --- */
+  --whatsapp: #25D366;
+  --whatsapp-dark: #1EBE5A;
+
+  /* --- Neutros (TEMA VERDE — fundo #2C6D52) --- */
+  --bg-color:   #2C6D52; /* fundo principal do site */
+  --bg-soft:    #245A44; /* faixa mais escura */
+  --bg-cream:   #1E4A38; /* faixa mais escura ainda */
+  --text-color: #FFFFFF;               /* texto sobre o verde */
+  --text-muted: rgba(255, 255, 255, 0.80);
+  --text-invert:#FFFFFF;
+  --border:     rgba(255, 255, 255, 0.18);
+
+  /* Texto sobre superfícies claras (cards) */
+  --on-light:       #24322C;
+  --on-light-muted: #5C6B64;
+  --light-border:   #E2EAE6;
+  --mint:           #CDEBDD; /* destaque claro sobre o verde */
+
+  --primary-color:   var(--green);
+  --secondary-color: var(--green-900);
+
+  /* --- Tipografia --- */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Poppins', var(--font-primary);
+
+  /* --- Espaçamentos --- */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.75rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 5rem;
+  --spacing-xxl: 7rem;
+
+  /* --- Layout --- */
+  --container: 1180px;
+  --container-narrow: 860px;
+
+  /* --- Bordas e sombras --- */
+  --radius-sm: 8px;
+  --radius:    16px;
+  --radius-lg: 26px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 2px 10px rgba(22, 56, 42, 0.06);
+  --shadow:    0 10px 30px rgba(22, 56, 42, 0.10);
+  --shadow-lg: 0 24px 60px rgba(22, 56, 42, 0.16);
+
+  /* --- Transições --- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition: 0.35s var(--ease);
+
+  --header-h: 76px;
+}
