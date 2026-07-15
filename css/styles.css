@@ -342,6 +342,11 @@ img.ico { filter: brightness(0) invert(1); object-fit: contain; }
 .conv-logo__slot { height: 60px; width: 100%; display: flex; align-items: center; justify-content: center; }
 .conv-logo img { max-height: 46px; max-width: 160px; width: auto; object-fit: contain; }
 .conv-name { font-family: var(--font-heading); font-size: 0.92rem; font-weight: 600; color: var(--on-light-muted); text-align: center; min-height: 2.4em; display: flex; align-items: center; justify-content: center; line-height: 1.2; }
+.conv-logo--cta { background: var(--green-50); border: 1px dashed var(--green-300); text-decoration: none; }
+.conv-logo--cta:hover { background: var(--green); border-color: var(--green); }
+.conv-cta-ico { width: 32px; height: 32px; color: var(--green); transition: color var(--transition); }
+.conv-cta-name { color: var(--green-800); font-weight: 700; transition: color var(--transition); }
+.conv-logo--cta:hover .conv-cta-ico, .conv-logo--cta:hover .conv-cta-name { color: #fff; }
 @media (min-width: 700px) { .gallery { grid-template-columns: repeat(3, 1fr); } }
 
 /* ---------- 15. UTILITÁRIOS + ANIMAÇÕES ---------- */
