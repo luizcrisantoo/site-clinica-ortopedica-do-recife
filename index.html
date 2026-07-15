@@ -44,6 +44,9 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
 
+  <!-- JS (no head com defer: roda após o parse e resiste a truncamento do fim do arquivo) -->
+  <script src="js/script.js" defer></script>
+
   <!-- Dados estruturados (SEO local) -->
   <script type="application/ld+json">
   {
@@ -217,6 +220,11 @@
             <h3>Agendamento fácil</h3>
             <p>Marque sua consulta em segundos pelo WhatsApp, sem filas e sem burocracia.</p>
           </article>
+          <article class="card reveal">
+            <div class="card__icon"><svg class="ico" aria-hidden="true"><use href="#i-pin"></use></svg></div>
+            <h3>Localização privilegiada</h3>
+            <p>No coração da Boa Vista, em Recife — de fácil acesso e bem localizada para você.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -281,7 +289,7 @@
         </div>
         <p class="text-center" style="margin-top:2rem">
           <a class="btn btn--wa btn--lg" href="https://wa.me/5581987590021?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20um%20especialista." target="_blank" rel="noopener noreferrer">
-            <svg class="ico" aria-hidden="true"><use href="#i-wa"></use></svg> Falar com um especialista
+            <svg class="ico" aria-hidden="true"><use href="#i-wa"></use></svg> Agende com um especialista
           </a>
         </p>
       </div>
@@ -309,19 +317,19 @@
           <article class="doc reveal" data-spec="Mão e Punho"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/andre-pires.jpg" alt="Dr André Pires" loading="lazy" width="52" height="52"></span><div><h3>André Pires</h3><p class="doc__spec">Ortopedista &bull; Mão e Punho</p><span class="doc__crm">CRM 22725</span></div></article>
           <article class="doc reveal" data-spec="Coluna"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/claudio-costa-neto.jpg" alt="Dr Cláudio Costa Neto" loading="lazy" width="52" height="52"></span><div><h3>Cláudio Costa Neto</h3><p class="doc__spec">Ortopedista &bull; Coluna</p><span class="doc__crm">CRM 24099</span></div></article>
           <article class="doc reveal" data-spec="Ombro e Cotovelo"><span class="doc__avatar">CM</span><div><h3>Cleber Maciel</h3><p class="doc__spec">Ortopedista &bull; Ombro e Cotovelo</p><span class="doc__crm">CRM 15671</span></div></article>
-          <article class="doc reveal" data-spec="Joelho"><span class="doc__avatar">DP</span><div><h3>Diego Pires</h3><p class="doc__spec">Ortopedista &bull; Joelho</p><span class="doc__crm">CRM 19864</span></div></article>
+          <article class="doc reveal" data-spec="Joelho"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/diego-pires.jpg" alt="Dr Diego Pires" loading="lazy" width="52" height="52"></span><div><h3>Diego Pires</h3><p class="doc__spec">Ortopedista &bull; Joelho</p><span class="doc__crm">CRM 19864</span></div></article>
           <article class="doc reveal" data-spec="Mão e Punho"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/fabilson-cavalcante.jpg" alt="Dr Fabilson Cavalcante" loading="lazy" width="52" height="52"></span><div><h3>Fabilson Cavalcante</h3><p class="doc__spec">Ortopedista &bull; Mão e Punho</p><span class="doc__crm">CRM 20713</span></div></article>
           <article class="doc reveal" data-spec="Ombro e Cotovelo"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/fabio-kauffman.jpg" alt="Dr Fábio Kauffman" loading="lazy" width="52" height="52"></span><div><h3>Fábio Kauffman</h3><p class="doc__spec">Ortopedista &bull; Ombro e Cotovelo</p><span class="doc__crm">CRM 14368</span></div></article>
           <article class="doc reveal" data-spec="Ombro e Cotovelo"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/felipe-fragoso.jpg" alt="Dr Felipe Fragoso" loading="lazy" width="52" height="52"></span><div><h3>Felipe Fragoso</h3><p class="doc__spec">Ortopedista &bull; Ombro e Cotovelo</p><span class="doc__crm">CRM 26180</span></div></article>
           <article class="doc reveal" data-spec="Quadril"><span class="doc__avatar">FL</span><div><h3>Filipe Lima</h3><p class="doc__spec">Ortopedista &bull; Quadril</p><span class="doc__crm">CRM 16656</span></div></article>
           <article class="doc reveal" data-spec="Coluna"><span class="doc__avatar">GT</span><div><h3>Gustavo Torres</h3><p class="doc__spec">Ortopedista &bull; Coluna</p><span class="doc__crm">CRM 14658</span></div></article>
           <article class="doc reveal" data-spec="Coluna"><span class="doc__avatar">IG</span><div><h3>Ivan Guedes</h3><p class="doc__spec">Ortopedista &bull; Coluna</p><span class="doc__crm">CRM 14501</span></div></article>
-          <article class="doc reveal" data-spec="Ombro e Cotovelo"><span class="doc__avatar">JM</span><div><h3>Juliano Machado</h3><p class="doc__spec">Ortopedista &bull; Ombro e Cotovelo</p><span class="doc__crm">CRM 15979</span></div></article>
+          <article class="doc reveal" data-spec="Ombro e Cotovelo"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/juliano-machado.jpg" alt="Dr Juliano Machado" loading="lazy" width="52" height="52"></span><div><h3>Juliano Machado</h3><p class="doc__spec">Ortopedista &bull; Ombro e Cotovelo</p><span class="doc__crm">CRM 15979</span></div></article>
           <article class="doc reveal" data-spec="Ombro e Cotovelo"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/julio-arraes.jpg" alt="Dr Julio Arraes" loading="lazy" width="52" height="52"></span><div><h3>Julio Arraes</h3><p class="doc__spec">Ortopedista &bull; Ombro e Cotovelo</p><span class="doc__crm">CRM 13722</span></div></article>
-          <article class="doc reveal" data-spec="Joelho"><span class="doc__avatar">LM</span><div><h3>Leonardo Monteiro</h3><p class="doc__spec">Ortopedista &bull; Joelho</p><span class="doc__crm">CRM 16119</span></div></article>
+          <article class="doc reveal" data-spec="Joelho"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/leonardo-monteiro.jpg" alt="Dr Leonardo Monteiro" loading="lazy" width="52" height="52"></span><div><h3>Leonardo Monteiro</h3><p class="doc__spec">Ortopedista &bull; Joelho</p><span class="doc__crm">CRM 16119</span></div></article>
           <article class="doc reveal" data-spec="Coluna"><span class="doc__avatar">LT</span><div><h3>Luciano Temporal</h3><p class="doc__spec">Ortopedista &bull; Coluna</p><span class="doc__crm">CRM 15136</span></div></article>
           <article class="doc reveal" data-spec="Joelho"><span class="doc__avatar">MM</span><div><h3>Marcantonio Machado</h3><p class="doc__spec">Ortopedista &bull; Joelho</p><span class="doc__crm">CRM 16218</span></div></article>
-          <article class="doc reveal" data-spec="Geral"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/mauricio-cesar.jpg" alt="Dr Maurício Cesar" loading="lazy" width="52" height="52"></span><div><h3>Maurício Cesar</h3><p class="doc__spec">Ortopedista &bull; Geral</p><span class="doc__crm">CRM 27559</span></div></article>
+          <article class="doc reveal" data-spec="Geral"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/mauricio-cesar.jpg" alt="Dr Maurício Cézar" loading="lazy" width="52" height="52"></span><div><h3>Maurício Cézar</h3><p class="doc__spec">Ortopedista &bull; Geral</p><span class="doc__crm">CRM 27559</span></div></article>
           <article class="doc reveal" data-spec="Ombro e Cotovelo"><span class="doc__avatar">RB</span><div><h3>Ricardo Barreto</h3><p class="doc__spec">Ortopedista &bull; Ombro e Cotovelo</p><span class="doc__crm">CRM 16306</span></div></article>
           <article class="doc reveal" data-spec="Pé e Tornozelo"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/sandrelli-araujo.jpg" alt="Dr Sandrelli Araújo" loading="lazy" width="52" height="52"></span><div><h3>Sandrelli Araújo</h3><p class="doc__spec">Ortopedista &bull; Pé e Tornozelo</p><span class="doc__crm">CRM 11057</span></div></article>
           <article class="doc reveal" data-spec="Joelho"><span class="doc__avatar doc__avatar--photo"><img src="assets/images/medicos/tiago-mesquita.jpg" alt="Dr Tiago Mesquita" loading="lazy" width="52" height="52"></span><div><h3>Tiago Mesquita</h3><p class="doc__spec">Ortopedista &bull; Joelho</p><span class="doc__crm">CRM 15791</span></div></article>
@@ -343,17 +351,25 @@
           <h2>Aceitamos os principais convênios</h2>
           <p>Atendemos particular e diversos planos de saúde. Confirme a cobertura do seu convênio com a nossa equipe.</p>
         </div>
-        <div class="insurance-note reveal">
-          <h3>Consulte seu convênio</h3>
-          <p>Trabalhamos com vários planos de saúde. Envie uma mensagem e confirmamos na hora se o seu convênio é atendido.</p>
-          <!-- Quando tiver a lista real de convênios, adicione um <span class="chip">Nome</span> para cada um aqui -->
-          <div class="chips">
-            <span class="chip">Consultas</span>
-            <span class="chip">Exames</span>
-            <span class="chip">Retornos</span>
-            <span class="chip">Atendimento particular</span>
-          </div>
-          <p style="margin-top:1.4rem">
+        <div class="conv-grid reveal">
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-unimed.png" alt="Unimed" loading="lazy"></span><span class="conv-name">Unimed</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-bradesco-saude.png" alt="Bradesco Saúde" loading="lazy"></span><span class="conv-name">Bradesco Saúde</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-sulamerica.png" alt="SulAmérica" loading="lazy"></span><span class="conv-name">SulAmérica</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-geap.png" alt="GEAP Saúde" loading="lazy"></span><span class="conv-name">GEAP Saúde</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-cassi.png" alt="Cassi" loading="lazy"></span><span class="conv-name">Cassi</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-saude-caixa.png" alt="Saúde Caixa" loading="lazy"></span><span class="conv-name">Saúde Caixa</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-assefaz.png" alt="Assefaz" loading="lazy"></span><span class="conv-name">Assefaz</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-fisco-saude.png" alt="Fisco Saúde" loading="lazy"></span><span class="conv-name">Fisco Saúde</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-fachesf.png" alt="Fachesf" loading="lazy"></span><span class="conv-name">Fachesf</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-postal-saude.png" alt="Postal Saúde" loading="lazy"></span><span class="conv-name">Postal Saúde</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-medservice.png" alt="Medservice" loading="lazy"></span><span class="conv-name">Medservice</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-camed.png" alt="Camed Saúde" loading="lazy"></span><span class="conv-name">Camed Saúde</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-capesesp.png" alt="CapeSesp" loading="lazy"></span><span class="conv-name">CapeSesp</span></div>
+          <div class="conv-logo"><span class="conv-logo__slot"><img src="assets/images/convenios/logo-compesa.png" alt="Compesa Saúde" loading="lazy"></span><span class="conv-name">Compesa Saúde</span></div>
+        </div>
+        <div class="insurance-note reveal" style="margin-top:2.2rem">
+          <p>Atendemos no particular e os principais planos de saúde. Não encontrou o seu convênio na lista? Confirme com a nossa equipe.</p>
+          <p style="margin-top:1.2rem">
             <a class="btn btn--wa" href="https://wa.me/5581987590021?text=Ol%C3%A1!%20Meu%20conv%C3%AAnio%20%C3%A9%20atendido%20na%20cl%C3%ADnica%3F" target="_blank" rel="noopener noreferrer">
               <svg class="ico" aria-hidden="true"><use href="#i-wa"></use></svg> Confirmar meu convênio
             </a>
@@ -516,4 +532,5 @@
     <svg class="ico" aria-hidden="true"><use href="#i-wa"></use></svg>
   </a>
 
-  <script 
+</body>
+</html>
