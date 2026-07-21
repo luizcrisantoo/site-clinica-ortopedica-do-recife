@@ -309,6 +309,7 @@ button.spec { cursor: pointer; font: inherit; color: inherit; }
 
 /* ---------- 14. ÍCONES (SVG inline, brancos) ---------- */
 .ico { color: #fff; display: inline-block; vertical-align: middle; flex: none; }
+.btn--primary .ico { color: var(--green-800); }
 svg.ico { width: 24px; height: 24px; }
 /* Ícones do icons8 (PNG monocromático) recoloridos para branco */
 img.ico { filter: brightness(0) invert(1); object-fit: contain; }
@@ -342,6 +343,31 @@ img.ico { filter: brightness(0) invert(1); object-fit: contain; }
 .conv-logo__slot { height: 60px; width: 100%; display: flex; align-items: center; justify-content: center; }
 .conv-logo img { max-height: 46px; max-width: 160px; width: auto; object-fit: contain; }
 .conv-name { font-family: var(--font-heading); font-size: 0.92rem; font-weight: 600; color: var(--on-light-muted); text-align: center; min-height: 2.4em; display: flex; align-items: center; justify-content: center; line-height: 1.2; }
+.section-head h2 { text-wrap: balance; }
+
+/* Galeria do Instagram (manual — entra novo no topo, sai o mais antigo) */
+.ig-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem; }
+.ig-post { position: relative; display: block; overflow: hidden; border-radius: var(--radius); aspect-ratio: 3 / 4; background: var(--green-800);
+  border: 1px solid rgba(255, 255, 255, 0.10); box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition); }
+.ig-post img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+.ig-post__ov { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(28, 74, 56, 0); transition: background var(--transition); }
+.ig-post__ov .ico { width: 30px; height: 30px; color: #fff; opacity: 0; transform: scale(0.85); transition: opacity var(--transition), transform var(--transition); }
+.ig-post:hover, .ig-post:focus-visible { transform: translateY(-5px); box-shadow: var(--shadow); border-color: rgba(255, 255, 255, 0.28); }
+.ig-post:focus-visible { border-radius: var(--radius); }
+.ig-post:hover img, .ig-post:focus-visible img { transform: scale(1.07); }
+.ig-post:hover .ig-post__ov, .ig-post:focus-visible .ig-post__ov { background: rgba(28, 74, 56, 0.55); }
+.ig-post:hover .ig-post__ov .ico, .ig-post:focus-visible .ig-post__ov .ico { opacity: 1; transform: scale(1); }
+/* Reels: a classe .ig-post--reel é mantida como marcação semântica.
+   Sem selo de play próprio — as artes já trazem o ícone do Instagram embutido. */
+/* Toque (sem hover): sinaliza que é clicável */
+@media (hover: none) {
+  .ig-post__ov { background: linear-gradient(to top, rgba(11, 40, 28, 0.42), transparent 55%); }
+  .ig-post__ov .ico { opacity: 0.92; transform: none; align-self: end; margin-bottom: 0.55rem; }
+}
+.ig-cta { text-align: center; margin-top: 2.2rem; }
+@media (min-width: 640px) { .ig-grid { grid-template-columns: repeat(4, 1fr); gap: 1.1rem; } }
+
 .conv-logo--cta { background: var(--green-50); border: 1px dashed var(--green-300); text-decoration: none; }
 .conv-logo--cta:hover { background: var(--green); border-color: var(--green); }
 .conv-cta-ico { width: 32px; height: 32px; color: var(--green); transition: color var(--transition); }
