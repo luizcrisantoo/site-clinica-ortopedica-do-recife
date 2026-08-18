@@ -38,7 +38,8 @@
  .vtv{position:fixed;inset:0;z-index:1100;background:#000;overflow:hidden}
  .vtv[hidden]{display:none}
  .vtv__bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:blur(32px) brightness(.5);transform:scale(1.18)}
- .vtv__fg{position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);height:100%;width:auto;object-fit:contain}
+ .vtv__fg{position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);height:100%;width:auto;object-fit:contain;opacity:0;transition:opacity .55s ease}
+ .vtv__fg.show{opacity:1}
  .vtv__exit{position:absolute;top:1.1rem;right:1.1rem;z-index:3;border:0;background:rgba(0,0,0,.45);color:#fff;padding:.5rem 1rem;border-radius:999px;cursor:pointer;font-size:.9rem}
  .vtv__start{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:rgba(11,40,28,.4)}
  .vtv__start[hidden]{display:none}
@@ -102,7 +103,8 @@
 
 <div class="vtv" id="vtv" hidden>
   <div class="vtv__bg" id="vtvBg"></div>
-  <video class="vtv__fg" id="vtvVideo" muted playsinline></video>
+  <video class="vtv__fg" id="vtvVideoA" muted playsinline preload="auto"></video>
+  <video class="vtv__fg" id="vtvVideoB" muted playsinline preload="auto"></video>
   <div class="vtv__start" id="vtvStart" hidden>
     <button class="vtv__startbtn" id="vtvStartBtn" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Iniciar com som</button>
     <p class="vtv__hint">Toca sozinho, em loop</p>
