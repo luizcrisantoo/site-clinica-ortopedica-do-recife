@@ -1,5 +1,10 @@
 /* script.js — script principal (clássico, funciona também em file://)
    Reúne menu, scroll/animações, filtro de especialidades e ano do rodapé. */
+
+/* Ativa as fontes do Google sem bloquear a primeira renderização.
+   O <link id="gfonts"> começa com media="print" (não-bloqueante); aqui ele passa a valer. */
+(function () { try { var f = document.getElementById('gfonts'); if (f) f.media = 'all'; } catch (e) {} })();
+
 (function () {
   'use strict';
 
