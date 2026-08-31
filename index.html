@@ -41,6 +41,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 
+  <!-- Preload da imagem principal do topo (melhora o LCP) -->
+  <link rel="preload" as="image" href="assets/images/foto-1.jpg" fetchpriority="high">
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
 
@@ -179,7 +182,7 @@
 
         <div class="hero-visual reveal">
           <div class="hero-photo">
-            <img src="assets/images/foto-1.jpg" alt="Fachada da Clínica Ortopédica do Recife" width="750" height="501">
+            <img src="assets/images/foto-1.jpg" alt="Fachada da Clínica Ortopédica do Recife" width="750" height="501" fetchpriority="high" decoding="async">
           </div>
           <div class="hero-float">
             <span class="hero-float__ico" aria-hidden="true"><svg class="ico"><use href="#i-users"></use></svg></span>
