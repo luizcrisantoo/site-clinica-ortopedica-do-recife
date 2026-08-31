@@ -19,8 +19,8 @@
   --accent-dark: #A9852F;
 
   /* --- WhatsApp --- */
-  --whatsapp: #25D366;
-  --whatsapp-dark: #1EBE5A;
+  --whatsapp: #008069;      /* verde oficial do WhatsApp — passa no contraste (4.9:1 com texto branco) */
+  --whatsapp-dark: #006B57; /* hover, um tom mais fundo */
 
   /* --- Neutros (TEMA VERDE — fundo #2C6D52) --- */
   --bg-color:   #2C6D52; /* fundo principal do site */
